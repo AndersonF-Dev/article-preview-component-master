@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", serif;
+}
+
+.article-main {
+    width: 910px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.article-ilustracao {
+    background-image: url(../images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 645px;
+    height: 22.07rem;
+}
+
+.article-section {
+    width: 100%;
+    padding: 3rem 3rem 0 3rem;
+    /* background-color: blueviolet; */
+}
+
+.article-title {
+    width: 450px;
+    word-spacing: 0.3rem;
+    color: hsl(217, 19%, 35%);
+    /* background-color: aqua; */
+}
+
+.article-paragraph {
+    color: hsl(217, 19%, 35%);
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.article-footer-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin-top: 2rem;
+}
+
+.article-footer {
+    display: flex;
+    gap: 1rem;
+}
+.article-footer-avatar {
+    background: url(../images/avatar-michelle.jpg) center center no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.article-footer p {
+    display: flex;
+    flex-direction: column;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.share {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 2rem;
+    background-color: hsl(210, 46%, 95%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share::after {
+    content: "";
+    position: absolute;
+    width: 50%; 
+    height: 60%; 
+    background-image: url(../images/icon-share.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
