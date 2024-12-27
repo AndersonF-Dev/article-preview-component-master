@@ -1,0 +1,22 @@
+@media only screen and (max-width: 820px){
+    .article-main{
+        display: flex;
+        flex-direction: column;
+        width: 36.875rem;
+        height: 700px;
+    }
+
+    .modal{
+        display: none;
+    }
+    .share-moble{
+        background-color: hsl(217, 19%, 35%);
+        width: 590px;
+        height: 100px;
+        z-index: 1;
+        bottom: 248px;
+        position: absolute;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}

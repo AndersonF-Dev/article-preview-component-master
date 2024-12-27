@@ -10,7 +10,9 @@ body {
 }
 
 .article-main {
-    width: 910px;
+    width: 56.875rem;
+    
+    /* width: 910px; */
     background-color: hsl(0, 0%, 100%);
     display: flex;
     border-radius: 1rem;
@@ -75,14 +77,18 @@ body {
 
 .share {
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 2rem;
     background-color: hsl(210, 46%, 95%);
 
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 0px;
+    right: -10px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .share::after {
@@ -96,6 +102,81 @@ body {
     background-repeat: no-repeat;
     
 }
+
+.share.ativo{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+.share.ativo::after
+{
+    content: "";
+    position: absolute;
+    width: 50%; 
+    height: 60%; 
+    background-image: url(../images/icon-share-branco.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.modal{
+    display: ;
+    position: absolute;
+    z-index: 1;
+    left: 770px;
+    right: 0px;
+    margin-top: -90px;
+    /* background-color: aqua; */
+}
+.box {
+    position: relative; /* Necessário para posicionar a seta */
+    background-color: hsl(217, 19%, 35%); /* Cor de fundo da caixa */
+    color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    margin-top: -30px;
+    
+  }
+  
+  .box::after {
+    content: ""; /* Cria um elemento vazio */
+    position: absolute; /* Para posicionamento relativo à .box */
+    bottom: -17px; /* Posiciona a seta embaixo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para alinhar no centro */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid hsl(217, 19%, 35%);
+    margin: 0 auto;
+   
+  }
+
+  .box-share-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 2rem;
+  }
+
+  .box-share-icon p {
+    color: hsl(212, 23%, 69%);
+  }
+
+  /* .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #3498db;
+    margin: 0 auto;
+  } */
+  
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
