@@ -10,11 +10,11 @@ body {
 }
 
 .article-main {
-    width: 56.875rem;
+    width: 18.575rem;
     
-    /* width: 910px; */
+    
     background-color: hsl(0, 0%, 100%);
-    display: flex;
+    /* display: flex; */
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -23,21 +23,137 @@ body {
     background-image: url(../images/drawers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 645px;
-    height: 22.07rem;
+    width: 18.575rem;
+    height: 250px;
 }
 
 .article-section {
     width: 100%;
-    padding: 3rem 3rem 0 3rem;
-    /* background-color: blueviolet; */
+    padding: 1.7rem 1.5rem 0 1.7rem;
+  
 }
 
+.article-title{
+    color: hsl(217, 19%, 35%);
+    font-size: .93rem;
+    
+}
+.article-paragraph{
+    margin-top: 1rem;
+    color: hsl(214, 17%, 51%);
+    font-size: .81rem;
+}
+.apaga{
+    display: none;
+}
+
+.article-footer-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 1rem;
+    /* background-color: aqua; */
+    margin-bottom: 1rem;
+}
+
+.article-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: hsl(217, 19%, 35%);
+    /* background-color: aqua; */
+}
+.nome-usuario{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: .81rem;
+}
+.article-footer span{
+    color: hsl(214, 17%, 51%);
+}
+
+.article-footer-avatar {
+    background: url(../images/avatar-michelle.jpg) center center no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+.article-footer p {
+    display: flex;
+    flex-direction: column;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.share {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: hsl(210, 46%, 95%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    right: -10px;
+    /* margin-top: 0px; */
+    cursor: pointer;
+}
+
+.share::after {
+    content: "";
+    position: absolute;
+    width: 50%; 
+    height: 60%; 
+    background-image: url(../images/icon-share.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.share-moble{
+    background-color: hsl(217, 19%, 35%);
+    width: 18.575rem;
+    height: 70px;
+    z-index: ;
+    bottom: 130px;
+    position: absolute;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.box-share-icon{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.box-share-icon p {
+    color: hsl(212, 23%, 69%);
+}
+
+.box-share-icon img {
+    width: 26px;
+}
+/*
 .article-title {
     width: 450px;
     word-spacing: 0.3rem;
     color: hsl(217, 19%, 35%);
-    /* background-color: aqua; */
+    
 }
 
 .article-paragraph {
@@ -50,7 +166,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: aqua; */
+    
     margin-top: 2rem;
 }
 
@@ -126,27 +242,28 @@ body {
     left: 770px;
     right: 0px;
     margin-top: -90px;
-    /* background-color: aqua; */
+    
+    display: none;
 }
 .box {
-    position: relative; /* Necessário para posicionar a seta */
-    background-color: hsl(217, 19%, 35%); /* Cor de fundo da caixa */
+    position: relative;
+    background-color: hsl(217, 19%, 35%);
     color: white;
     padding: 20px;
     width: 300px;
     text-align: center;
-    border-radius: 8px; /* Bordas arredondadas */
-    margin: 10px auto; /* Centraliza horizontalmente */
+    border-radius: 8px; 
+    margin: 10px auto; 
     margin-top: -30px;
     
   }
   
   .box::after {
-    content: ""; /* Cria um elemento vazio */
-    position: absolute; /* Para posicionamento relativo à .box */
-    bottom: -17px; /* Posiciona a seta embaixo */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta para alinhar no centro */
+    content: ""; 
+    position: absolute; 
+    bottom: -17px; 
+    left: 50%;
+    transform: translateX(-50%); 
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
@@ -167,15 +284,11 @@ body {
   .box-share-icon p {
     color: hsl(212, 23%, 69%);
   }
-
-  /* .triangle {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #3498db;
-    margin: 0 auto;
-  } */
+  .share-moble{
+    display: none;
+  }
+ */
+  
   
 .attribution a {
     color: hsl(228, 45%, 44%);
