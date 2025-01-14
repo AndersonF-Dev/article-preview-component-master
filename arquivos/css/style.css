@@ -10,8 +10,8 @@ body {
 }
 
 .article-main {
-    width: 18.575rem;
-    
+    width: 20.575rem;
+    /* height: 700px; */
     
     background-color: hsl(0, 0%, 100%);
     /* display: flex; */
@@ -23,8 +23,8 @@ body {
     background-image: url(../images/drawers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 18.575rem;
-    height: 250px;
+    width: 20.575rem;
+    height: 210px;
 }
 
 .article-section {
@@ -119,10 +119,10 @@ body {
 
 .share-moble{
     background-color: hsl(217, 19%, 35%);
-    width: 18.575rem;
-    height: 70px;
+    width: 20.575rem;
+    height: 78px;
     z-index: ;
-    bottom: 130px;
+    bottom: 97px;
     position: absolute;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -132,7 +132,9 @@ body {
     justify-content: center;
     /* display: none; */
 }
-
+.modal{
+    display: none;
+}
 .box-share-icon{
     /* background-color: aqua; */
     display: flex;
@@ -147,6 +149,89 @@ body {
 
 .box-share-icon img {
     width: 26px;
+}
+
+@media (min-width: 430px){
+    .share-moble{
+        bottom: 97px;
+        background-color: aqua;
+    }
+}
+@media (min-width: 768px){
+    body{
+        background-color: rgb(48, 102, 102);
+    }
+    .article-main{
+        display: flex;
+        width: 38.413rem;
+    }
+    .article-ilustracao{
+        width: 21.138rem;
+        height: 100%;
+    }
+    .article-section{
+        /* background-color: blueviolet; */
+        width: 27.063rem;
+    }
+    .share-moble{
+        display: none;
+    }
+
+    .modal{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        left: 31.25rem;
+        right: 0px;
+        margin-top: -115px;
+        
+        /* display: none; */
+    }
+    .box {
+        position: relative;
+        background-color: hsl(217, 19%, 35%);
+        color: white;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        border-radius: 8px; 
+        margin: 10px auto; 
+        margin-top: -30px;
+        
+      }
+      
+      .box::after {
+        content: ""; 
+        position: absolute; 
+        bottom: -17px; 
+        left: 50%;
+        transform: translateX(-50%); 
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid hsl(217, 19%, 35%);
+        margin: 0 auto;
+       
+      }
+    
+      .box-share-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 2rem;
+      }
+    
+      .box-share-icon p {
+        color: hsl(212, 23%, 69%);
+      }
+}
+
+@media (min-width: 1024px){
+    .modal{
+        left: 32.95rem;
+    }
 }
 /*
 .article-title {
